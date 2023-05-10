@@ -2,7 +2,7 @@ import React from 'react'
 import { HiOutlineDownload } from "react-icons/hi"
 import resume from "./arquivos/curriculo.pdf"
 
-export default function FourthSection() {
+export default function FourthSection(props) {
 
     function createCard(name, level, num){
         return(

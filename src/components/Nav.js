@@ -1,7 +1,6 @@
 import React from 'react';
-import Logo from './companyLogo/logo.svg'
 
-export default function Nav() {
+export default function Nav({ scrollToSection }) {
   return (
     <nav>
         <div className='logo'>
@@ -9,9 +8,8 @@ export default function Nav() {
         </div>
         <div className='menu'>
             <ul>
-                <a href='/'><li>Sobre mim</li></a>
-                <a href='/'><li>Habilidades</li></a>
-                <a href='/'><li>Experiências</li></a>
+                <a href='/' ><li>Conhecimentos</li></a>
+                <a href='/' ><li>Experiências</li></a>
             </ul>
         </div>
     </nav>

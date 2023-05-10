@@ -24,7 +24,7 @@ Este é um currículo digital completo e interativo, onde você poderá acessar 
         <img id="fotoMinha" src={Foto} alt='Minha foto' className='shadow'/>
         <h2>Prazer, sou Fernando Costa</h2>
         <div className='box flex center shadow'>
-          <a href='www.linkedin.com/in/fmscosta'><img src={LIn} alt='Linkedin Icon provided: https://icons8.com/' id='icons'/></a>
+          <a href='https://www.linkedin.com/in/fmscosta/'><img src={LIn} alt='Linkedin Icon provided: https://icons8.com/' id='icons'/></a>
           <a href='https://www.tiktok.com/@codetools'><img src={tiktok} alt='Tiktok Icon provided: https://icons8.com/' id='icons'/></a>
           <a href='https://github.com/eunandocosta'><img src={github} alt='GitHub Icon provided: https://icons8.com/' id='icons'/></a>
         </div>

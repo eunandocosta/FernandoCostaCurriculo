@@ -3,7 +3,7 @@ import {DiReact, DiJavascript1, DiNodejsSmall, DiPython, DiHtml5, DiCss3, DiCode
 import { FaLanguage } from "react-icons/fa"
 import { SiMicrosoftoffice } from "react-icons/si"
 
-export default function ThirdSection() {
+export default function ThirdSection(props) {
     function createCard(name, level, Icon){
         function cases(level){
             if(parseInt(level)<30){
