@@ -1,6 +1,6 @@
 import React from 'react'
 import { HiOutlineDownload } from "react-icons/hi"
-import resume from "./curriculo.pdf"
+import resume from "./arquivos/curriculo.pdf"
 
 const file = './curriculo.pdf'
 
