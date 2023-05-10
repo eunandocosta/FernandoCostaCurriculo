@@ -2,28 +2,7 @@ import React from 'react'
 import { HiOutlineDownload } from "react-icons/hi"
 import resume from "./arquivos/curriculo.pdf"
 
-const file = './curriculo.pdf'
-
 export default function FourthSection() {
-
-    const downloadFile = (file)=>{
-        fetch(file)
-        .then(response => response.blob())
-        .then(blob => {
-            const blobFile = window.URL.createObjectURL(new Blob([blob], {type: 'application/pdf'}))
-            const fileName = file.split('/').pop()
-            const aTag = document.createElement('a')
-            aTag.href = blobFile
-            aTag.setAttribute('download', fileName)
-            document.body.appendChild(aTag)
-            aTag.click()
-            aTag.remove()
-            console.log(fileName)
-    })
-        
-    }
-
-    console.log(file)
 
     function createCard(name, level, num){
         return(
