@@ -104,6 +104,23 @@ nav{
   align-items: center;
 }
 
+nav{
+  max-height: 100px;
+  overflow: hide;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo img{
+  height: 50px;
+}
+
 .logo>h1{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;

@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from './companyLogo/logo.svg'
 
 export default function Nav({ scrollToSection, thirdRef, fourthRef }) {
 
   return (
     <nav>
         <div className='logo'>
-            <h1> Fernando Costa/ </h1>
+            <img src={logo} alt='logo em forma de peixe'/><h1> Fernando Costa/ </h1>
         </div>
         <div className='menu'>
             <ul>
