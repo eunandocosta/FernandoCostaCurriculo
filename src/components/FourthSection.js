@@ -2,7 +2,7 @@ import React from 'react'
 import { HiOutlineDownload } from "react-icons/hi"
 import resume from "./arquivos/curriculo.pdf"
 
-export default function FourthSection(props, fourthRef) {
+const FourthSection = React.forwardRef((props, ref) => {
 
     function createCard(name, level, num){
         return(
@@ -17,7 +17,7 @@ export default function FourthSection(props, fourthRef) {
     )}
 
   return (
-    <div className='container center justifyItems noCol' ref={fourthRef}>
+    <div className='container center justifyItems noCol' ref={ref}>
         <h1 className='title'>Graduação</h1>
         <div className='flex gap'>
             { createCard('Ciência da Computação', 'Segundo', 2)}
@@ -32,4 +32,6 @@ export default function FourthSection(props, fourthRef) {
         </div>
     </div>
   )
-}
+});
+
+export default FourthSection;

@@ -9,17 +9,17 @@ import { useRef } from 'react';
 
 
 function App() {
-  const main = useRef(null);
-  const second = useRef(null);
   const third = useRef(null);
   const fourth = useRef(null);
 
   const scrollToSection = (section) => {
     try {
-      window.scrollTo({
-        top: section.current.offsetTop,
-        behavior: 'smooth',
-      });
+      if (section.current !== null) {
+        window.scrollTo({
+          top: section.current.offsetTop,
+          behavior: 'smooth',
+        });
+      }
     } catch (error) {
       console.log(error);
     }
@@ -28,8 +28,8 @@ function App() {
   return (
     <div className="App">
       <Nav scrollToSection={scrollToSection} thirdRef={third} fourthRef={fourth} />
-      <MainSection ref={main} />
-      <SecondSection ref={second} />
+      <MainSection />
+      <SecondSection />
       <ThirdSection ref={third} />
       <FourthSection ref={fourth} />
       <Footer />

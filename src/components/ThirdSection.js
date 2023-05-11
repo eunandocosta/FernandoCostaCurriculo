@@ -3,7 +3,7 @@ import {DiReact, DiJavascript1, DiNodejsSmall, DiPython, DiHtml5, DiCss3, DiCode
 import { FaLanguage } from "react-icons/fa"
 import { SiMicrosoftoffice } from "react-icons/si"
 
-export default function ThirdSection(props, thirdRef) {
+const ThirdSection = React.forwardRef((props, ref) => {
     function createCard(name, level, Icon){
         function cases(level){
             if(parseInt(level)<30){
@@ -37,7 +37,7 @@ export default function ThirdSection(props, thirdRef) {
         </div>
     )}
   return (
-    <div className='container center justifyItems noCol' ref={thirdRef}>
+    <div className='container center justifyItems noCol' ref={ref}>
         <div className='title'>Conhecimentos em Computação</div>
         <div className='flex gap'>
            { createCard('JavaScript', '60', DiJavascript1)}
@@ -58,4 +58,6 @@ export default function ThirdSection(props, thirdRef) {
     </div>
     
   )
-}
+})
+
+export default ThirdSection;
