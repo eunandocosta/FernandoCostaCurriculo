@@ -4,7 +4,7 @@ import FourthSection from './components/FourthSection';
 import MainSection from './components/MainSection';
 import Nav from './components/Nav';
 import SecondSection from './components/SecondSection';
-import ThirdSection from './components/ThirdSection'
+import ThirdSection from './components/ThirdSection';
 import { useRef } from 'react';
 
 
@@ -14,13 +14,20 @@ function App() {
   const third = useRef(null);
   const fourth = useRef(null);
 
-  const scrollToSection = (sectionRef) => {
-    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (section) => {
+    try {
+      window.scrollTo({
+        top: section.current.offsetTop,
+        behavior: 'smooth',
+      });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
     <div className="App">
-      <Nav scrollToSection={scrollToSection} />
+      <Nav scrollToSection={scrollToSection} thirdRef={third} fourthRef={fourth} />
       <MainSection ref={main} />
       <SecondSection ref={second} />
       <ThirdSection ref={third} />

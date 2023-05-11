@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Nav({ scrollToSection }) {
+export default function Nav({ scrollToSection, thirdRef, fourthRef }) {
+
   return (
     <nav>
         <div className='logo'>
@@ -8,8 +9,8 @@ export default function Nav({ scrollToSection }) {
         </div>
         <div className='menu'>
             <ul>
-                <a href='/' ><li>Conhecimentos</li></a>
-                <a href='/' ><li>Experiências</li></a>
+                <li className='menuItens' onClick={()=>scrollToSection(thirdRef)}>Conhecimentos</li>
+                <li className='menuItens' onClick={()=>scrollToSection(fourthRef)}>Experiências</li>
             </ul>
         </div>
     </nav>

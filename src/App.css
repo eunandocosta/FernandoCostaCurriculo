@@ -374,6 +374,16 @@ a{
   background-color: #affc41;
 }
 
+.menuItens{
+  padding: 2px;
+  cursor: pointer;
+}
+
+.menuItens:hover{
+  background-color: #affc41;
+  color: #1f2421;
+}
+
 @keyframes blinkText{
   from{
     border-right-color: #f2ffdf;
