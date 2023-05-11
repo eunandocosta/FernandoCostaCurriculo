@@ -545,4 +545,7 @@ a{
   .icons2{
     font-size: 50px;
   }
+  .contactBox{
+    max-width: 400px;
+  }
 }

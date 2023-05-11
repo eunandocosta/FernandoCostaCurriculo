@@ -2,7 +2,12 @@ import React from 'react'
 import { FaWhatsapp } from "react-icons/fa"
 import { BsEnvelope } from "react-icons/bs"
 
+const link = 'https://wa.me/5521997879899?text=Ol%C3%A1%2C+Fernando.+Gostaria+de+falar+a+respeito+do+seu+servi%C3%A7o.'
+
 export default function SecondSection() {
+    function copiarDados() {
+        navigator.clipboard.writeText("fernando@devcosta.com")
+    }
 
   return (
     <section>
@@ -15,10 +20,10 @@ export default function SecondSection() {
                     <div className='contactBox'>
                         <div className='aninha'>
                             <BsEnvelope className='icon'/>
-                            <h3>fernando@devcosta.com</h3>
+                            <h3 id="email">fernando@devcosta.com</h3>
                         </div>
-                        <button className='email' 
-                            >Enviar</button>
+                        <button className='email' onClick={copiarDados}
+                            >Copiar</button>
                     </div>
 
                 </div>
@@ -28,8 +33,8 @@ export default function SecondSection() {
                             <FaWhatsapp className='icon'/>
                             <h3>Me chame no Whatsapp</h3>
                         </div>
-                        <button className='email' 
-                            >Enviar</button>
+                        <a href={link} target='_blank' rel='noreferrer'><button className='email' 
+                            >Enviar</button></a>
                     </div>
                 </div>
             </div>
