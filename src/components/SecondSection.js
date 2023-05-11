@@ -5,9 +5,15 @@ import { BsEnvelope } from "react-icons/bs"
 const link = 'https://wa.me/5521997879899?text=Ol%C3%A1%2C+Fernando.+Gostaria+de+falar+a+respeito+do+seu+servi%C3%A7o.'
 
 export default function SecondSection() {
-    function copiarDados() {
-        navigator.clipboard.writeText("fernando@devcosta.com")
-    }
+    function copiarEmail() {
+        navigator.clipboard.writeText('fernando@devcosta.com')
+          .then(() => {
+            alert("Email copiado para o clipboard!");
+          })
+          .catch((err) => {
+            console.error("Erro ao copiar texto: ", err);
+          });
+      }
 
   return (
     <section>
@@ -22,7 +28,7 @@ export default function SecondSection() {
                             <BsEnvelope className='icon'/>
                             <h3 id="email">fernando@devcosta.com</h3>
                         </div>
-                        <button className='email' onClick={copiarDados}
+                        <button className='email' onClick={copiarEmail}
                             >Copiar</button>
                     </div>
 
