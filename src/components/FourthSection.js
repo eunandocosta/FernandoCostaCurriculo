@@ -21,7 +21,7 @@ const FourthSection = React.forwardRef((props, ref) => {
         <h1 className='title'>Graduação</h1>
         <div className='flex gap'>
             { createCard('Ciência da Computação', 'Segundo', 2)}
-            { createCard('Relações Internacionais', 'Último', 8)}
+            { createCard('Relações Internacionais', 'Finalizado')}
         </div>
         <h1 className='title'>Currículo</h1>
         <p style={{color: '#affc41'}}>Fique a vontade para olhar meu currículo através do Download abaixo</p>
