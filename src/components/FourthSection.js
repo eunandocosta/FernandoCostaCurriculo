@@ -8,7 +8,7 @@ const FourthSection = React.forwardRef((props, ref) => {
         return(
         <div className='card'>
             <h1 className='habilidades'>{name}</h1>
-            <div className='pizza'>{num}º</div>
+            <div className='pizza'>{num}</div>
             <div className='bottom'>
                 <h1>Período</h1>
                 <div className='level'>{level}</div>
@@ -20,8 +20,8 @@ const FourthSection = React.forwardRef((props, ref) => {
     <div className='container center justifyItems noCol' ref={ref}>
         <h1 className='title'>Graduação</h1>
         <div className='flex gap'>
-            { createCard('Ciência da Computação', 'Segundo', 2)}
-            { createCard('Relações Internacionais', 'Bacharel', 'Finalizado')}
+            { createCard('Ciência da Computação', 'Segundo', '2º')}
+            { createCard('Relações Internacionais', 'Finalizado', 'Bacharel')}
         </div>
         <h1 className='title'>Currículo</h1>
         <p style={{color: '#affc41'}}>Fique a vontade para olhar meu currículo através do Download abaixo</p>
