@@ -1,6 +1,6 @@
 import React from 'react'
 import { HiOutlineDownload } from "react-icons/hi"
-import resume from "./arquivos/curriculo.pdf"
+import resume from "./arquivos/Fernando Costa - Currículo.pdf"
 
 const FourthSection = React.forwardRef((props, ref) => {
 
