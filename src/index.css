@@ -5,9 +5,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background: rgb(12, 12, 27);
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1, h2, h3, h4, h5, h6, p{
+  text-align: center;
+}
+
+h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.986rem;
+}
+
+h2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.486rem;
+}
+
+p{
+  max-width: 80ch;
+  font-size: 1.2rem;
+}
+
+/*Features*/
+
+.layer1{
+  background: url('./features/peaks.svg');
+}
+
+.layer2{
+  background: url('./features/waves.svg');
+}
+
+.layer3{
+  background: url('./features/layered-waves.svg');
+}
+
