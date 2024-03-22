@@ -3,9 +3,9 @@ import  {Card, CardSecondary}  from "./extras/Card";
 
 import {motion, useMotionValue} from 'framer-motion';
 
-import { FaLongArrowAltLeft } from "react-icons/fa";
-import { FaLongArrowAltRight, FaNodeJs, FaGithub  } from "react-icons/fa";
+import { FaLongArrowAltRight, FaNodeJs, FaGithub, FaJava, FaLongArrowAltLeft  } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoPython, IoLogoReact, IoLogoHtml5, IoLogoCss3 } from "react-icons/io5";
+import { TbBrandKotlin } from "react-icons/tb";
 import { BiLogoFlask } from "react-icons/bi";
 import { SiMysql, SiCsharp  } from "react-icons/si";
 import { DiCode } from "react-icons/di";
@@ -37,17 +37,17 @@ const About = (props) => {
 
 
   const cardSkillCount = [
-    [<IoLogoJavascript fontSize={'3em'}/>, 'JavaScript', 2],
+    [<FaJava fontSize={'3em'}/>, 'Java', 2],
+    [<TbBrandKotlin fontSize={'3em'}/>, 'Kotlin', 1],
     [<IoLogoPython fontSize={'3em'}/>, 'Python', 2],
-    [<IoLogoReact fontSize={'3em'}/>, 'React', 2],
     [<BiLogoFlask fontSize={'3em'}/>, 'Flask', 2],
+    [<IoLogoReact fontSize={'3em'}/>, 'React', 2],
+    [<IoLogoJavascript fontSize={'3em'}/>, 'JavaScript', 2],
     [<IoLogoHtml5 fontSize={'3em'}/>, 'HTML', 2],
     [<IoLogoCss3 fontSize={'3em'}/>, 'CSS', 2],
     [<SiMysql fontSize={'3em'}/>, 'MySQL', 2],
     [<FaNodeJs fontSize={'3em'}/>, 'Node JS', 1],
-    [<DiCode fontSize={'3em'}/>, 'C', 1],
-    [<SiCsharp  fontSize={'3em'}/>, 'C#', 1],
-    [<FaGithub  fontSize={'3em'}/>, 'GitHub', 1],
+    [<FaGithub  fontSize={'3em'}/>, 'GitHub', 3],
   ];
 
   console.log(cardSkillCount.length*100)
